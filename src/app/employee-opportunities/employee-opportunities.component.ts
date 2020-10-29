@@ -10,7 +10,7 @@ export class EmployeeOpportunitiesComponent implements OnInit {
 
   list: Array<any>;
   selectedCategory;
-  categories = ["Web", "All"]
+  categories = ["Accounting", "Web", "Marketing", "All"]
   constructor() {
     this.list = tempList;
     this.selectedCategory = "By Categories"

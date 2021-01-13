@@ -1,6 +1,6 @@
 # RBC AmpHacks 2020 Team 6 Uplift
 
-Click to view live [demo](https://shannon-codes.github.io/rbcuplift)
+Click to view live [DEMO](https://shannon-codes.github.io/rbcuplift)
 
 Hackathon Challenge: How might we think beyond banking to create meaningful solutions to make Canadian Lives better.
 

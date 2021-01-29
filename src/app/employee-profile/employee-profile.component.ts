@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {empList} from '../employee-mock-list';
+import {empList,  empListDetails} from '../employee-mock-list';
 
 @Component({
   selector: 'app-employee-profile',
@@ -10,6 +10,7 @@ import {empList} from '../employee-mock-list';
 export class EmployeeProfileComponent implements OnInit {
 
 employee
+employeeDetail
 
   constructor(private route: ActivatedRoute) { }
 
@@ -20,7 +21,7 @@ employee
     const id = +this.route.snapshot.paramMap.get('id');
     if(id!==null){
       this.employee=empList[id-1];
-      
+      this.employeeDetail = empListDetails[id-1];
     }
    
   }

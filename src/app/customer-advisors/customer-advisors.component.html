@@ -5,8 +5,8 @@
   <option *ngFor="let item of categories">{{ item }}</option>
 </select>
 
-<div style="display: flex; align-content: space-between;  flex-wrap: wrap;">
-  <mat-card *ngFor="let advisor of list" style="margin: 0px auto 20px auto;">
+<div style="display: flex; justify-content:center; align-items:center; flex-wrap: wrap;">
+  <mat-card *ngFor="let advisor of list" style="margin: 1%;">
     <mat-card-header>
       <mat-card-title>{{ advisor.name }}</mat-card-title>
       <mat-card-subtitle>{{ advisor.title }}</mat-card-subtitle>

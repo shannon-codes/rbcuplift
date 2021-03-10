@@ -11,7 +11,7 @@
       <mat-card-title>{{ advisor.name }}</mat-card-title>
       <mat-card-subtitle>{{ advisor.title }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="advisor.photo" [alt]="advisor.name">
+    <img class="advisor-photo" mat-card-image [src]="advisor.photo" [alt]="advisor.name">
     <mat-card-actions>
       <!-- <button mat-button (click)="addadvisor(advisor.sku)">Learn More</button> -->
       <a routerLink="/customer/employee-profile/{{advisor.id}}" class="btn btn-warning">View Profile</a>

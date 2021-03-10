@@ -2,43 +2,56 @@
 <div class="container wrapper">
   <div class="row">
     <div class="col-sm">
-      
-      <div class="row mb-3">
+      <!-- <div class="row mb-3"> -->
         <div class="top">
           <img class="circular--square" src="{{employee.photo}}" />
-        <div class="calling"><h1>{{employee.name}}</h1><h2>{{employee.title}}</h2> </div>
-      </div>
-      </div>
-      <div class="row mb-3">
-        <mat-card><mat-card-title>Reach out to me for:</mat-card-title>
-          <span *ngFor="let skill of employeeDetail.skills"><mat-icon>check_circle_outline</mat-icon> {{skill}}</span>
-          <!-- <mat-icon>check_circle_outline</mat-icon> Social Media Marketing
-          <mat-icon>check_circle_outline</mat-icon> Emergency Response
-          <mat-icon>check_circle_outline</mat-icon> Pitching
-          <mat-icon>check_circle_outline</mat-icon> Business Use Case -->
+          <div class="calling">
+            <h1>{{employee.name}}</h1>
+            <h2>{{employee.title}}</h2>
+          </div>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="row mb-3"> -->
+        <mat-card>
+          <mat-card-title>Reach out to me for:</mat-card-title>
+          <span *ngFor="let skill of employeeDetail.skills">
+            <mat-icon>check_circle_outline</mat-icon> {{skill}}
+          </span>
         </mat-card>
-      </div>
-      <div class="row mb-3">
-        <mat-card><mat-card-title>About Me</mat-card-title> <p>{{employeeDetail.about}}</p></mat-card>
-      </div>
-      <div class="row">
+      <!-- </div> -->
+      <!-- <div class="row mb-3"> -->
+        <mat-card>
+          <mat-card-title>About Me</mat-card-title>
+          <p>{{employeeDetail.about}}</p>
+        </mat-card>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
         <mat-card>
           <mat-card-title>Leave a Review</mat-card-title>
-         
+
           <p>Be the first to write a review.</p>
         </mat-card>
-      </div>
+      <!-- </div> -->
     </div>
     <div class="col-sm">
       <mat-card>
         <mat-card-title>Book a Consultation</mat-card-title>
-    
+
         <div class="form-group">
           <label for="exampleFormControlSelect1">Example select</label>
           <select class="form-control" id="exampleFormControlSelect1">
-            <option>Accounting / Bookeeping </option>
-            <option>Social Media Marketing</option>
+            <option>Accounting</option>
+            <option>Bookeeping</option>
+            <option>Brainstorming</option>
+            <option>Branding</option>
+            <option>Cybersecurity</option>
+            <option>Events</option>
+            <option>Fundraising</option>
+            <option>Finance</option>
             <option>Pitching</option>
+            <option>Social Media Marketing</option>
+            <option>Strategy</option>
+            <option>Technology</option>
           </select>
         </div>
         <div class="form-group">
@@ -47,15 +60,15 @@
         </div>
         <h5>Book from my available times</h5>
         <a class="btn btn-primary m-3" href="#" role="button">Oct 5 5:30</a>
-<button class="btn btn-primary m-3" type="submit">Oct 5 6:00</button>
-<a class="btn btn-primary m-3" href="#" role="button">Oct 5 6:30</a>
-<br>
-<a class="btn btn-primary m-3" href="#" role="button">Oct 6 5:30</a>
-<button class="btn btn-primary m-3" type="submit">Oct 6 6:00</button>
-<a class="btn btn-primary m-3" href="#" role="button">Oct 6 6:30</a>
-<br>
+        <button class="btn btn-primary m-3" type="submit">Oct 5 6:00</button>
+        <a class="btn btn-primary m-3" href="#" role="button">Oct 5 6:30</a>
+        <br>
+        <a class="btn btn-primary m-3" href="#" role="button">Oct 6 5:30</a>
+        <button class="btn btn-primary m-3" type="submit">Oct 6 6:00</button>
+        <a class="btn btn-primary m-3" href="#" role="button">Oct 6 6:30</a>
+        <br>
         <button type="button" class="btn btn-warning">Request Time Slot</button>
       </mat-card>
-      
+
     </div>
   </div>

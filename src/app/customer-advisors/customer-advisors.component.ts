@@ -11,7 +11,12 @@ export class CustomerAdvisorsComponent implements OnInit {
 
   list: Array<any>;
   selectedCategory;
-  categories = [ "Accounting", "Management", "Public Relations", "Security", "Social Media", "All"]
+  categories = [ "Accounting", 
+                  "Management", 
+                  "Public Relations", 
+                  "Security", 
+                  "Social Media", 
+                  "All"]
   constructor() {
     this.list = empList;
     this.selectedCategory = "Filter Area of Expertise"

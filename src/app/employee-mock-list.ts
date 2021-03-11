@@ -23,3 +23,4 @@ export const empListDetails=[
   { id: 4, skills: ["Ethical Hacking", "Strategy"], about:"With 3 years as an ethical hacker and penetration tester, feel free to reach out." },
   { id: 5, skills: ["Bookeeping", "Tax Law", "Business Plan"], about:"With 5 years as Creative Director at RBC, I'm best suited to provide advice on businesses in media arts industries." }
 ];
+

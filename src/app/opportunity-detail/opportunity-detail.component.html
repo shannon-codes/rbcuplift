@@ -1,0 +1,25 @@
+<app-header user="employee"></app-header>
+<div class="container">
+<div class="heading">
+  <div><h1>{{opportunity.skill +' Call'}}</h1></div>
+  <div class="heading__tagline"><h4>Help {{ customer.name }} with a 1 hour video chat to help about questions on {{opportunity.skill}}</h4></div>
+</div>
+<div class="opportunity__container">
+  <div class="opportunity__photo"><img class="company_logo" src="{{customer.photo}}"/>
+  <div class="opportunity__apply"><button type="button" class="btn btn-warning btn-lg btn-block">Send Message</button></div></div>
+  <div class="opportunity__company">
+    <mat-card>
+      <mat-card-title>{{customer.name}}</mat-card-title>
+      <p><strong>Industry: </strong>{{customer.industry}}</p>
+    </mat-card>
+    <mat-card>
+      <mat-card-title>About the business:</mat-card-title>
+      <p>{{customer.about}}</p>
+    </mat-card>
+    <mat-card>
+      <mat-card-title>Call details:</mat-card-title>
+      <p>{{opportunity.calldetails}}</p>
+    </mat-card>
+  </div>
+</div>
+</div>

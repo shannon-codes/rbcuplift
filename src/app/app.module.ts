@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 import { CustomerAdvisorsComponent } from './customer-advisors/customer-advisors.component';
 import { MatIconModule } from '@angular/material/icon';
+import { OpportunityDetailComponent } from './opportunity-detail/opportunity-detail.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
     HomeComponent,
     EmployeeOpportunitiesComponent,
     EmployeeProfileComponent,
-    CustomerAdvisorsComponent
+    CustomerAdvisorsComponent,
+    OpportunityDetailComponent
   ],
   imports: [
     BrowserModule,

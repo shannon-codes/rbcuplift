@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { tempList } from '../customer-mock-list';
+import { opportunityList, Opportunity, customerList, Customer } from '../customer-mock-list';
 
 @Component({
   selector: 'app-employee-opportunities',
@@ -8,19 +8,49 @@ import { tempList } from '../customer-mock-list';
 })
 export class EmployeeOpportunitiesComponent implements OnInit {
 
-  list: Array<any>;
+  customerList: Customer[];
+  list: Opportunity[];
   selectedCategory;
-  categories = ["Accounting", "Web", "Marketing", "All"]
+  categories = ["Accounting", 
+                "Branding",
+                "Coaching",
+                "Data Analysis",
+                "Database Administration",
+                "Digital Advertising",
+                "Entrepreneurship",
+                "Event Planning",
+                "Graphic Design",
+                "Information Technology",
+                "Project Management",
+                "Public Relations",
+                "Marketing",
+                "Sales",
+                "Social Media Marketing",
+                "Talent Recruitment",
+                "Website Design",
+                "Writing",  
+                "All"
+              ]
+
   constructor() {
-    this.list = tempList;
-    this.selectedCategory = "By Categories"
+    this.list = opportunityList;
+    
+    this.customerList = customerList;
+    this.selectedCategory = "Select Skill Requested"
   }
 
   ngOnInit() {
   }
 
   valueSelected() {
-    this.list = tempList.filter(item => item.name.toUpperCase().includes(this.selectedCategory.toUpperCase()) || this.selectedCategory === "All" || this.selectedCategory === "By Categories");
+    this.list = opportunityList.filter(item => item.skill.toUpperCase().includes(this.selectedCategory.toUpperCase()) || this.selectedCategory === "All" || this.selectedCategory === "Select Skill Requested");
+  }
+
+  getCustomer(cid): string{
+    var customer = customerList.find(customer =>{
+      return customer.id == cid
+    })
+    return customer.name;
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {empList,  empListDetails} from '../employee-mock-list';
+import { empList,  empListDetails } from '../employee-mock-list';
 
 @Component({
   selector: 'app-employee-profile',

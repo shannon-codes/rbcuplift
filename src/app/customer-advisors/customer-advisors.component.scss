@@ -1,10 +1,22 @@
 mat-card img{
-  object-fit: cover; /*this makes the image in src fit to the size specified below*/
-  width: 300px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  object-fit: cover; 
+  width: 300px; 
   height: 300px;
 }
 
 select{
 width: 30%;
 margin: 20px; 
+}
+.container-cards{
+  display: flex; 
+  justify-content:center; 
+  align-items:center; 
+  flex-wrap: wrap;
+}
+
+.flex{
+  display: flex;
+  // justify-content: flex-end;
+  margin-left: 2%;
 }

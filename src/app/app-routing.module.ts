@@ -7,8 +7,7 @@ import {EmployeeProfileComponent} from './employee-profile/employee-profile.comp
 import { OpportunityDetailComponent } from './opportunity-detail/opportunity-detail.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'employee/home', component: EmployeeOpportunitiesComponent, pathMatch: 'full' },
   { path: 'employee/opportunity-detail/:id', component: OpportunityDetailComponent, pathMatch: 'full' },
   { path: 'customer/home', component: CustomerAdvisorsComponent, pathMatch: 'full' },

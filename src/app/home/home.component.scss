@@ -11,6 +11,11 @@
   width: 30%;
 }
 
+mat-icon{
+  font-size: 5rem;
+  color:wheat;
+}
+
 @media only screen and (max-width: 600px) {
   .login {
     flex-direction: column;
@@ -29,13 +34,31 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 0;
+  background-position: center center;
 }
 
 .title{
-  width: 30%;
+
   margin: 10%;
   color: white;
+}
+
+.chevron:hover{
+font-size: x-large;
+}
+
+@media only screen and (min-width: 768px){
+  .title{
+    width: 30%;
+    margin: 10%;
+    color: white;
+  }
+  .banner{
+    background-position:unset;
+    justify-content: center;
+  }
+
 }
 

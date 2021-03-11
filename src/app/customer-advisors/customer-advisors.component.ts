@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {empList} from '../employee-mock-list';
-
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-customer-advisors',
@@ -20,6 +20,7 @@ export class CustomerAdvisorsComponent implements OnInit {
   constructor() {
     this.list = empList;
     this.selectedCategory = "Filter Area of Expertise"
+    
   }
 
   ngOnInit() {

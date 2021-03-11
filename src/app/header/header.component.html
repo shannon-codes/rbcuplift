@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
-<h1><a class="navbar-brand txt" href="/"><img src="assets/RBCUplift2.png"></a></h1>
+<h1><a class="navbar-brand txt" routerLink="/"><img src="assets/RBCUplift2.png"></a></h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
     <ng-template #notAuth>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#login-section">Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="./" fragment="login-section">Login<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </ng-template>

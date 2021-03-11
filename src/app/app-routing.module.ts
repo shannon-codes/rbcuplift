@@ -7,7 +7,8 @@ import {EmployeeProfileComponent} from './employee-profile/employee-profile.comp
 import { OpportunityDetailComponent } from './opportunity-detail/opportunity-detail.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full'},
+  { path: 'home', component: HomeComponent, pathMatch: 'full'},
+  { path: '', redirectTo:'/home', pathMatch:'full' },
   { path: 'employee/home', component: EmployeeOpportunitiesComponent, pathMatch: 'full' },
   { path: 'employee/opportunity-detail/:id', component: OpportunityDetailComponent, pathMatch: 'full' },
   { path: 'customer/home', component: CustomerAdvisorsComponent, pathMatch: 'full' },
@@ -15,7 +16,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled',
+  }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

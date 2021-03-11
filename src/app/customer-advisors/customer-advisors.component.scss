@@ -5,7 +5,7 @@ mat-card img{
 }
 
 select{
-width: 30%;
+// width: 30%;
 margin: 20px; 
 }
 .container-cards{
@@ -19,4 +19,10 @@ margin: 20px;
   display: flex;
   // justify-content: flex-end;
   margin-left: 2%;
+}
+
+@media only screen and (min-width: 768px){
+  select{
+    width: 30%;
+    }
 }
